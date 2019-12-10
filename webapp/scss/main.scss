@@ -1,24 +1,19 @@
+@use 'fonts';
+@use 'colors';
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-// typography
-$font-stack: Montserrat, sans-serif;
-$font-size: 75%;
-
-// colors
-$primary-color: black;
-$secondary-color: #f7f7ff;
 $first-impression-dimension: 52.5%;
 
 *, body {
   margin: 0;
   padding: 0;
-  font-family: $font-stack;
+  font-family: fonts.$font-stack;
 }
 
 body {
   padding: 16px;
-  background: $primary-color;
-  color: $secondary-color;
+  background: colors.$primary-color;
+  color: colors.$secondary-color;
 }
 
 #menuNav {
@@ -27,7 +22,7 @@ body {
 
   #language {
     font-weight: 100;
-    font-size: $font-size + 12.5%;
+    font-size: fonts.$font-size + 12.5%;
     display: flex;
     align-items: center;
   }
@@ -67,11 +62,11 @@ main {
     text-align: center;
     
     #name {
-      font-size: $font-size + 37.5%;
+      font-size: fonts.$font-size + 37.5%;
     }
 
     #role {
-      font-size: $font-size + 12.5%;
+      font-size: fonts.$font-size + 12.5%;
       font-weight: 100;
       margin-top: 6.96%;
     }
@@ -82,12 +77,12 @@ main {
     width: 39.02%;
     padding: 6.75% 0;
     background: transparent;
-    border: 1px solid $secondary-color;
-    color: $secondary-color;
+    border: 1px solid colors.$secondary-color;
+    color: colors.$secondary-color;
 
     &:active {
-      background: $secondary-color;
-      color: $primary-color;
+      background: colors.$secondary-color;
+      color: colors.$primary-color;
     }
   }
 
@@ -96,6 +91,6 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: $font-size + 12.5%;
+    font-size: fonts.$font-size + 12.5%;
   }
 }
