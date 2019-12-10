@@ -2,12 +2,12 @@
 
 // typography
 $font-stack: Montserrat, sans-serif;
-$font-size: 12px;
+$font-size: 75%;
 
 // colors
 $primaryColor: black;
 $secondaryColor: #f7f7ff;
-$firstImpressionDimension: 172px;
+$firstImpressionDimension: 52.5%;
 
 *, body {
   margin: 0;
@@ -27,7 +27,7 @@ body {
 
   #language {
     font-weight: 100;
-    font-size: $font-size + 2px;
+    font-size: $font-size + 12.5%;
     display: flex;
     align-items: center;
   }
@@ -53,7 +53,7 @@ main {
   #profilePicture1 {
     width: $firstImpressionDimension;
     height: $firstImpressionDimension;
-    margin-top: 16px;
+    margin-top: 4.87%;
     border-radius: 50%;
     -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
     filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
@@ -61,26 +61,26 @@ main {
 
   #nameAndRole {
     width: $firstImpressionDimension;
-    margin-top: 54px;
+    margin-top: 16.46%;
     flex-direction: column;
     display: flex;
     text-align: center;
     
     #name {
-      font-size: $font-size + 6px;
+      font-size: $font-size + 37.5%;
     }
 
     #role {
-      font-size: $font-size + 2px;
+      font-size: $font-size + 12.5%;
       font-weight: 100;
-      margin-top: 12px;
+      margin-top: 6.96%;
     }
   }
 
   #meetMe {
-    margin: 46px auto;
-    width: 128px;
-    height: 64px;
+    margin: 14.02% auto;
+    width: 39.02%;
+    padding: 6.75% 0;
     background: transparent;
     border: 1px solid $secondaryColor;
     color: $secondaryColor;
@@ -92,10 +92,10 @@ main {
   }
 
   #quote {
-    width: $firstImpressionDimension * 1.1;
+    width: $firstImpressionDimension * 1.5;
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 12px;
+    font-size: $font-size + 12.5%;
   }
 }
