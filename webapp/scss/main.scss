@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+// typography
+$font-stack: Montserrat, sans-serif;
+$font-size: 12px;
+
+// colors
+$primaryColor: black;
+$secondaryColor: #f7f7ff;
+$firstImpressionDimension: 172px;
+
+*, body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+}
+
+body {
+  padding: 16px;
+  background: $primaryColor;
+  color: $secondaryColor;
+}
+
+#menuNav {
+  display: flex;
+  justify-content: space-between;
+
+  #language {
+    font-weight: 100;
+    font-size: $font-size + 2px;
+    display: flex;
+    align-items: center;
+  }
+
+  button {
+    background: transparent;
+    width: 32px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #arrowIcon {
+    transform: rotate(180deg);
+  }
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  #profilePicture1 {
+    width: $firstImpressionDimension;
+    height: $firstImpressionDimension;
+    margin-top: 16px;
+    border-radius: 50%;
+    -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
+    filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
+  }
+
+  #nameAndRole {
+    width: $firstImpressionDimension;
+    margin-top: 54px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    
+    #name {
+      font-size: $font-size + 6px;
+    }
+
+    #role {
+      font-size: $font-size + 2px;
+      font-weight: 100;
+      margin-top: 12px;
+    }
+  }
+
+  #meetMe {
+    margin: 46px auto;
+    width: 128px;
+    height: 64px;
+    background: transparent;
+    border: 1px solid $secondaryColor;
+    color: $secondaryColor;
+
+    &:active {
+      background: $secondaryColor;
+      color: $primaryColor;
+    }
+  }
+
+  #quote {
+    width: $firstImpressionDimension * 1.1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+  }
+}

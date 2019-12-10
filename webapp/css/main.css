@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+*, body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  padding: 16px;
+  background: black;
+  color: #f7f7ff;
+}
+
+#menuNav {
+  display: flex;
+  justify-content: space-between;
+}
+#menuNav #language {
+  font-weight: 100;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+#menuNav button {
+  background: transparent;
+  width: 32px;
+  border: none;
+  cursor: pointer;
+}
+#menuNav #arrowIcon {
+  transform: rotate(180deg);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #profilePicture1 {
+  width: 172px;
+  height: 172px;
+  margin-top: 16px;
+  border-radius: 50%;
+  -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg);
+  filter: saturate(80%) sepia(20%) hue-rotate(0deg);
+}
+main #nameAndRole {
+  width: 172px;
+  margin-top: 54px;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+main #nameAndRole #name {
+  font-size: 18px;
+}
+main #nameAndRole #role {
+  font-size: 14px;
+  font-weight: 100;
+  margin-top: 12px;
+}
+main #meetMe {
+  margin: 46px auto;
+  width: 128px;
+  height: 64px;
+  background: transparent;
+  border: 1px solid #f7f7ff;
+  color: #f7f7ff;
+}
+main #meetMe:active {
+  background: #f7f7ff;
+  color: black;
+}
+main #quote {
+  width: 189.2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "Tacio Costa - Portfolio - WebApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "portfolio",
+    "webapp",
+    "tacio",
+    "costa"
+  ],
+  "author": "Tacio Costa",
+  "license": "ISC"
+}
