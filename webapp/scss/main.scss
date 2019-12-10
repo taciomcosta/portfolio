@@ -5,9 +5,9 @@ $font-stack: Montserrat, sans-serif;
 $font-size: 75%;
 
 // colors
-$primaryColor: black;
-$secondaryColor: #f7f7ff;
-$firstImpressionDimension: 52.5%;
+$primary-color: black;
+$secondary-color: #f7f7ff;
+$first-impression-dimension: 52.5%;
 
 *, body {
   margin: 0;
@@ -17,8 +17,8 @@ $firstImpressionDimension: 52.5%;
 
 body {
   padding: 16px;
-  background: $primaryColor;
-  color: $secondaryColor;
+  background: $primary-color;
+  color: $secondary-color;
 }
 
 #menuNav {
@@ -51,8 +51,8 @@ main {
   align-items: center;
 
   #profilePicture1 {
-    width: $firstImpressionDimension;
-    height: $firstImpressionDimension;
+    width: $first-impression-dimension;
+    height: $first-impression-dimension;
     margin-top: 4.87%;
     border-radius: 50%;
     -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
@@ -60,7 +60,7 @@ main {
   }
 
   #nameAndRole {
-    width: $firstImpressionDimension;
+    width: $first-impression-dimension;
     margin-top: 16.46%;
     flex-direction: column;
     display: flex;
@@ -82,17 +82,17 @@ main {
     width: 39.02%;
     padding: 6.75% 0;
     background: transparent;
-    border: 1px solid $secondaryColor;
-    color: $secondaryColor;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
 
     &:active {
-      background: $secondaryColor;
-      color: $primaryColor;
+      background: $secondary-color;
+      color: $primary-color;
     }
   }
 
   #quote {
-    width: $firstImpressionDimension * 1.5;
+    width: $first-impression-dimension * 1.5;
     display: flex;
     flex-direction: column;
     text-align: center;
