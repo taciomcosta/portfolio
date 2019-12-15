@@ -56,24 +56,25 @@
   transform: rotate(-40deg) translate(2px, -2px);
 }
 #menuToggle input:checked ~ ul {
-  transform: none;
+  transform: translate(100%, 0);
 }
 
 #menu {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
+  margin: 0 0 0 -100%;
+  padding: 75px 0px 50px 0px;
   background: #f7f7ff;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: none;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 #menu li {
-  padding: 10px 0;
+  padding: 10px 25px;
   width: 100%;
   font-size: 87.5%;
 }
