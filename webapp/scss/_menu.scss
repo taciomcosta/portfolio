@@ -46,14 +46,6 @@
                 opacity 0.55s ease;
   }
 
-  // span:first-child {
-  //   transform-origin: 0% 0%;
-  // }
-
-  // span:nth-last-child(2) {
-  //   transform-origin: 0% 100%;
-  // }
-
   input:checked ~ span:nth-child(3) { 
     opacity: 0;
     background: transparent;
@@ -70,31 +62,9 @@
     transform: scale(1.1) rotate(-45deg);
   }
 
-  // input:checked ~ span {
-  //   opacity: 1;
-  //   transform: rotate(50deg) ;
-  //   background: colors.$primary-color;
-  // }
-
-  // input:checked ~ span:nth-child(3) {
-  //   opacity: 1;
-  //   transform: rotate(-50deg) ;
-  //   background: colors.$primary-color;
-  // }
-
-  // input:checked ~ span:nth-last-child(3) {
-  //   opacity: 0;
-  //   transform: rotate(0deg) scale(0.2, 0.2);
-  // }
-
-  // input:checked ~ span:nth-last-child(2) {
-  //   transform: rotate(-40deg) translate(2px, -2px);
-  // }
-
   input:checked ~ ul {
     transform: translate(100%, 0);
   }
-
 }
 
 #menu {
