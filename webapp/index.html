@@ -20,21 +20,21 @@
       <span></span>
       <ul id="menu">
         <a href="#">
-          <li>About</li>
+          <li id="menuAbout">About</li>
         </a>
         <a href="#">
-          <li>Cases</li>
+          <li id="menuCases">Cases</li>
         </a>
         <a href="#">
-          <li>Memoirs</li>
+          <li id="menuMemoirs">Memoirs</li>
         </a>
         <a href="#">
-          <li>Contact</li>
+          <li id="menuContact">Contact</li>
         </a>
       </ul>
     </div>
     <div id="language">
-      <span>English</span>
+      <span id="selectedLanguage" onclick="switchLanguage()">English</span>
     </div>
   </nav>
   <main>
@@ -45,10 +45,16 @@
     </div>
     <button id="meetMe">MEET ME</button>
     <div id="quote">
-      <span id="text">"Stay hungry. Stay foolish."</span>
-      <span id="author">Steve Jobs</span>
+      <span id="quoteText">"Stay hungry. Stay foolish."</span>
+      <span id="quoteAuthor">Steve Jobs</span>
     </div>
   </main>
 </body>
+
+<script type="module">
+  import { main, switchLanguage } from './js/main.js';
+  window.switchLanguage = switchLanguage;
+  main();
+</script>
 
 </html>
