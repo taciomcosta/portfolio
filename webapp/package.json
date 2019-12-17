@@ -13,5 +13,8 @@
     "costa"
   ],
   "author": "Tacio Costa",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.0"
+  }
 }
