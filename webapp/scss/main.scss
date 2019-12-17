@@ -23,7 +23,7 @@ body {
 
   #language {
     font-weight: 100;
-    font-size: fonts.$font-size + 12.5%;
+    font-size: 0.87rem;
     display: flex;
     align-items: center;
     padding-right: 4px;
@@ -64,11 +64,13 @@ main {
     text-align: center;
     
     #name {
-      font-size: fonts.$font-size + 37.5%;
+      font-size: 1rem;
+      font-size: 4vw;
     }
 
     #role {
-      font-size: fonts.$font-size + 12.5%;
+      font-size: 0.87rem;
+      font-size: 3.4vw;
       font-weight: 100;
       margin-top: 6.96%;
     }
@@ -93,7 +95,8 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: fonts.$font-size + 12.5%;
+    font-size: 0.87rem;
+    font-size: 3.4vw;
   }
 }
 

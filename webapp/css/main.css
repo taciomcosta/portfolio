@@ -72,7 +72,7 @@
 #menu li {
   padding: 10px 25px;
   width: 100%;
-  font-size: 87.5%;
+  font-size: 0.87rem;
 }
 
 *, body {
@@ -93,7 +93,7 @@ body {
 }
 #menuNav #language {
   font-weight: 100;
-  font-size: 87.5%;
+  font-size: 0.87rem;
   display: flex;
   align-items: center;
   padding-right: 4px;
@@ -129,10 +129,12 @@ main #nameAndRole {
   text-align: center;
 }
 main #nameAndRole #name {
-  font-size: 112.5%;
+  font-size: 1rem;
+  font-size: 4vw;
 }
 main #nameAndRole #role {
-  font-size: 87.5%;
+  font-size: 0.87rem;
+  font-size: 3.4vw;
   font-weight: 100;
   margin-top: 6.96%;
 }
@@ -153,7 +155,8 @@ main #quote {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 87.5%;
+  font-size: 0.87rem;
+  font-size: 3.4vw;
 }
 
 /*# sourceMappingURL=main.css.map */
