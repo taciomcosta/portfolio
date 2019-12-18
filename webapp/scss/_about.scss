@@ -1,0 +1,49 @@
+@use 'colors';
+
+#aboutSection {
+
+  padding: 13px;
+
+  #skills {
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 0.87rem;
+      font-size: 3.4vw;
+
+      img {
+        width: 64px;
+        height: 64px;
+      }
+
+      span {
+        font-size: 1rem;
+        font-size: 5vw;
+        color: colors.$third-color;
+        margin: 13px;
+      }
+
+      p {
+        width: 150px;
+      }
+
+    }
+
+    .row:nth-child(2) {
+      margin-top: 26px;
+    }
+
+  }
+}

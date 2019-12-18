@@ -149,6 +149,44 @@
   font-size: 3.4vw;
 }
 
+#aboutSection {
+  padding: 13px;
+}
+#aboutSection #skills {
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+}
+#aboutSection #skills .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#aboutSection #skills .skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 0.87rem;
+  font-size: 3.4vw;
+}
+#aboutSection #skills .skill img {
+  width: 64px;
+  height: 64px;
+}
+#aboutSection #skills .skill span {
+  font-size: 1rem;
+  font-size: 5vw;
+  color: #60656f;
+  margin: 13px;
+}
+#aboutSection #skills .skill p {
+  width: 150px;
+}
+#aboutSection #skills .row:nth-child(2) {
+  margin-top: 26px;
+}
+
 *, body {
   margin: 0;
   padding: 0;
@@ -159,6 +197,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 nav {
@@ -169,6 +208,7 @@ nav {
 
 section {
   padding-bottom: 10%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
