@@ -150,7 +150,8 @@
 }
 
 #aboutSection {
-  padding: 13px;
+  padding-top: 10%;
+  border: 1px solid black;
 }
 #aboutSection #skills {
   display: flex;
@@ -169,9 +170,10 @@
   text-align: center;
   font-size: 0.87rem;
   font-size: 3.4vw;
+  width: 100%;
 }
 #aboutSection #skills .skill img {
-  width: 64px;
+  width: 40%;
   height: 64px;
 }
 #aboutSection #skills .skill span {
@@ -181,7 +183,7 @@
   margin: 13px;
 }
 #aboutSection #skills .skill p {
-  width: 150px;
+  width: 80%;
 }
 #aboutSection #skills .row:nth-child(2) {
   margin-top: 26px;
