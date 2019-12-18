@@ -11,8 +11,8 @@ $first-impression-dimension: 52.5%;
   color: colors.$secondary-color;
 
   #profilePicture1 {
-    width: $first-impression-dimension;
-    height: $first-impression-dimension;
+    width: 48%;
+    height: 48%;
     margin-top: 10%;
     border-radius: 50%;
     -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
