@@ -12,45 +12,35 @@ $first-impression-dimension: 52.5%;
 }
 
 body {
-  padding: 16px;
-  background: colors.$primary-color;
-  color: colors.$secondary-color;
-}
-
-#menuNav {
-  display: flex;
-  justify-content: space-between;
-
-  #language {
-    font-weight: 100;
-    font-size: 0.87rem;
-    display: flex;
-    align-items: center;
-    padding-right: 4px;
-  }
-
-  button {
-    background: transparent;
-    width: 32px;
-    border: none;
-    cursor: pointer;
-  }
-
-  #arrowIcon {
-    transform: rotate(180deg);
-  }
-
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: colors.$primary-color;
+  color: colors.$secondary-color;
+  background: red;
+}
+
+nav {
+  background: colors.$primary-color;
+  color: colors.$secondary-color;
+  padding: 16px;
+}
+
+
+#firstImpressionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: colors.$primary-color;
+  padding-bottom: 10%;
 
   #profilePicture1 {
     width: $first-impression-dimension;
     height: $first-impression-dimension;
-    margin-top: 16.87%;
+    margin-top: 10%;
     border-radius: 50%;
     -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
     filter: saturate(80%) sepia(20%) hue-rotate(0deg); 

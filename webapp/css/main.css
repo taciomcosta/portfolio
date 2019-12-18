@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+#menuNav {
+  display: flex;
+  justify-content: space-between;
+}
+#menuNav #language {
+  font-weight: 100;
+  font-size: 0.87rem;
+  display: flex;
+  align-items: center;
+  padding-right: 4px;
+}
+#menuNav button {
+  background: transparent;
+  width: 32px;
+  border: none;
+  cursor: pointer;
+}
+#menuNav #arrowIcon {
+  transform: rotate(180deg);
+}
+
 #menuToggle {
   display: block;
   position: relative;
@@ -81,64 +102,54 @@
   font-family: Montserrat, sans-serif;
 }
 
-body {
-  padding: 16px;
-  background: black;
-  color: #f7f7ff;
-}
-
-#menuNav {
-  display: flex;
-  justify-content: space-between;
-}
-#menuNav #language {
-  font-weight: 100;
-  font-size: 0.87rem;
-  display: flex;
-  align-items: center;
-  padding-right: 4px;
-}
-#menuNav button {
-  background: transparent;
-  width: 32px;
-  border: none;
-  cursor: pointer;
-}
-#menuNav #arrowIcon {
-  transform: rotate(180deg);
-}
-
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: black;
+  color: #f7f7ff;
+  background: red;
 }
-main #profilePicture1 {
+
+nav {
+  background: black;
+  color: #f7f7ff;
+  padding: 16px;
+}
+
+#firstImpressionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  padding-bottom: 10%;
+}
+#firstImpressionSection #profilePicture1 {
   width: 52.5%;
   height: 52.5%;
-  margin-top: 16.87%;
+  margin-top: 10%;
   border-radius: 50%;
   -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg);
   filter: saturate(80%) sepia(20%) hue-rotate(0deg);
 }
-main #nameAndRole {
+#firstImpressionSection #nameAndRole {
   width: 52.5%;
   margin-top: 16.46%;
   flex-direction: column;
   display: flex;
   text-align: center;
 }
-main #nameAndRole #name {
+#firstImpressionSection #nameAndRole #name {
   font-size: 1rem;
   font-size: 4vw;
 }
-main #nameAndRole #role {
+#firstImpressionSection #nameAndRole #role {
   font-size: 0.87rem;
   font-size: 3.4vw;
   font-weight: 100;
   margin-top: 6.96%;
 }
-main #meetMe {
+#firstImpressionSection #meetMe {
   margin: 14.02% auto;
   width: 39.02%;
   padding: 6.75% 0;
@@ -146,11 +157,11 @@ main #meetMe {
   border: 1px solid #f7f7ff;
   color: #f7f7ff;
 }
-main #meetMe:active {
+#firstImpressionSection #meetMe:active {
   background: #f7f7ff;
   color: black;
 }
-main #quote {
+#firstImpressionSection #quote {
   width: 78.75%;
   display: flex;
   flex-direction: column;
