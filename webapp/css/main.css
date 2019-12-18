@@ -107,9 +107,6 @@
   width: 48%;
   height: 48%;
   margin-top: 10%;
-  border-radius: 50%;
-  -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg);
-  filter: saturate(80%) sepia(20%) hue-rotate(0deg);
 }
 #firstImpressionSection #nameAndRole {
   width: 52.5%;
@@ -207,9 +204,6 @@
   margin-top: 13px;
   width: 52.5%;
   height: 52.5%;
-  border-radius: 50%;
-  -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg);
-  filter: saturate(80%) sepia(20%) hue-rotate(0deg);
 }
 
 .chips-section {
@@ -259,6 +253,12 @@ nav {
 section {
   padding-bottom: 10%;
   width: 100%;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg);
+  filter: saturate(80%) sepia(20%) hue-rotate(0deg);
 }
 
 /*# sourceMappingURL=main.css.map */
