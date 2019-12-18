@@ -163,6 +163,7 @@
 
 #aboutSection {
   padding-top: 10%;
+  background: #f7f7ff;
 }
 
 #skillsSubsection {
@@ -209,6 +210,31 @@
   border-radius: 50%;
   -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg);
   filter: saturate(80%) sepia(20%) hue-rotate(0deg);
+}
+
+.chips-section {
+  margin: 26px 16px 0 16px;
+  font-size: 0.87rem;
+  font-size: 3.9vw;
+}
+.chips-section .chips-title {
+  color: #60656f;
+}
+.chips-section .chips {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+.chips-section .chips span {
+  display: flex;
+  margin: 13px 13px 0px 0;
+  padding: 8px;
+  background: #60656f;
+  border-radius: 24px;
+  color: #f7f7ff;
+  font-size: 0.75rem;
+  font-size: 3.4vw;
 }
 
 *, body {
