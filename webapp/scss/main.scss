@@ -1,9 +1,9 @@
 @use 'fonts';
 @use 'colors';
 @use 'menu';
+@use 'firstimpression';
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-$first-impression-dimension: 52.5%;
 
 *, body {
   margin: 0;
@@ -18,9 +18,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: colors.$primary-color;
-  color: colors.$secondary-color;
-  background: red;
 }
 
 nav {
@@ -30,63 +27,9 @@ nav {
 }
 
 
-#firstImpressionSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: colors.$primary-color;
+section {
   padding-bottom: 10%;
-
-  #profilePicture1 {
-    width: $first-impression-dimension;
-    height: $first-impression-dimension;
-    margin-top: 10%;
-    border-radius: 50%;
-    -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
-    filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
-  }
-
-  #nameAndRole {
-    width: $first-impression-dimension;
-    margin-top: 16.46%;
-    flex-direction: column;
-    display: flex;
-    text-align: center;
-    
-    #name {
-      font-size: 1rem;
-      font-size: 4vw;
-    }
-
-    #role {
-      font-size: 0.87rem;
-      font-size: 3.4vw;
-      font-weight: 100;
-      margin-top: 6.96%;
-    }
-  }
-
-  #meetMe {
-    margin: 14.02% auto;
-    width: 39.02%;
-    padding: 6.75% 0;
-    background: transparent;
-    border: 1px solid colors.$secondary-color;
-    color: colors.$secondary-color;
-
-    &:active {
-      background: colors.$secondary-color;
-      color: colors.$primary-color;
-    }
-  }
-
-  #quote {
-    width: $first-impression-dimension * 1.5;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 0.87rem;
-    font-size: 3.4vw;
-  }
 }
+
+
 

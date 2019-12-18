@@ -96,33 +96,12 @@
   font-size: 0.87rem;
 }
 
-*, body {
-  margin: 0;
-  padding: 0;
-  font-family: Montserrat, sans-serif;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: black;
-  color: #f7f7ff;
-  background: red;
-}
-
-nav {
-  background: black;
-  color: #f7f7ff;
-  padding: 16px;
-}
-
 #firstImpressionSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: black;
-  padding-bottom: 10%;
+  color: #f7f7ff;
 }
 #firstImpressionSection #profilePicture1 {
   width: 52.5%;
@@ -168,6 +147,28 @@ nav {
   text-align: center;
   font-size: 0.87rem;
   font-size: 3.4vw;
+}
+
+*, body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  background: black;
+  color: #f7f7ff;
+  padding: 16px;
+}
+
+section {
+  padding-bottom: 10%;
 }
 
 /*# sourceMappingURL=main.css.map */
