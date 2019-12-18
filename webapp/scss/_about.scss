@@ -1,51 +1,70 @@
 @use 'colors';
 
+.title {
+  font-size: 1rem;
+  font-size: 5vw;
+  color: colors.$third-color;
+  margin: 13px 0;
+}
+
+.description {
+  font-size: 0.87rem;
+  font-size: 3.4vw;
+}
+
 #aboutSection {
-
   padding-top: 10%;
-  border: 1px solid black;
+}
 
-  #skills {
+#skillsSubsection {
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .skill {
     display: flex;
     flex-direction: column;
-    padding: 13px;
+    align-items: center;
+    text-align: center;
+    font-size: 0.87rem;
+    font-size: 3.4vw;
+    width: 100%;
 
-    .row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    img {
+      width: 40%;
+      height: 64px;
     }
 
-    .skill {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      font-size: 0.87rem;
-      font-size: 3.4vw;
-      width: 100%;
-
-      img {
-        width: 40%;
-        height: 64px;
-      }
-
-      span {
-        font-size: 1rem;
-        font-size: 5vw;
-        color: colors.$third-color;
-        margin: 13px;
-      }
-
-      p {
-        width: 80%;
-      }
-
+    p {
+      width: 80%;
     }
 
-    .row:nth-child(2) {
-      margin-top: 26px;
-    }
+  }
 
+  .row:nth-child(2) {
+    margin-top: 26px;
+  }
+}
+
+#whatAreYouDoingSubsection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 16px;
+
+  img {
+    margin-top: 13px;
+    width: 52.5%;
+    height: 52.5%;
+    border-radius: 50%;
+    -webkit-filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
+    filter: saturate(80%) sepia(20%) hue-rotate(0deg); 
   }
 }
