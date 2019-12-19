@@ -14,21 +14,21 @@
 <body>
   <nav id="menuNav">
     <div id="menuToggle">
-      <input type="checkbox" />
+      <input id="menuToggleInput" type="checkbox" />
       <span></span>
       <span></span>
       <span></span>
       <ul id="menu">
-        <a href="#">
+        <a href="#aboutSection" onclick="closeMenu()">
           <li id="menuAbout">About</li>
         </a>
-        <a href="#">
+        <a href="#casesSection" onclick="closeMenu()">
           <li id="menuCases">Cases</li>
         </a>
-        <a href="#">
+        <a href="#memoirsSection" onclick="closeMenu()">
           <li id="menuMemoirs">Memoirs</li>
         </a>
-        <a href="#">
+        <a href="#contactSection" onclick="closeMenu()">
           <li id="menuContact">Contact</li>
         </a>
       </ul>
@@ -44,7 +44,7 @@
         <span id="name">TACIO COSTA</span>
         <span id="role">Software Engineer</span>
       </div>
-      <button id="meetMe">MEET ME</button>
+      <a id="meetMe" href="#aboutSection" onclick="closeMenu()">MEET ME</a>
       <div id="quote">
         <span id="quoteText">"Stay hungry. Stay foolish."</span>
         <span id="quoteAuthor">Steve Jobs</span>
@@ -117,8 +117,9 @@
 </body>
 
 <script type="module">
-  import { main, switchLanguage } from './js/main.js';
+  import { main, switchLanguage, closeMenu } from './js/main.js';
   window.switchLanguage = switchLanguage;
+  window.closeMenu = closeMenu;
   main();
 </script>
 

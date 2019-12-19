@@ -132,6 +132,8 @@
   background: transparent;
   border: 1px solid #f7f7ff;
   color: #f7f7ff;
+  text-decoration: none;
+  text-align: center;
 }
 #firstImpressionSection #meetMe:active {
   background: #f7f7ff;

@@ -26,3 +26,8 @@ export function switchLanguage() {
     selectedLanguage.innerText = 'English';
   setUpLanguage();
 }
+
+export function closeMenu() {
+  const menu = document.getElementById('menuToggleInput');
+  menu.checked = false;
+}
