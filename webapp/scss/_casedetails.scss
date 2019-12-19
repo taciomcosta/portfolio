@@ -1,0 +1,37 @@
+@use 'colors';
+
+#caseDetailsSection {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  background: colors.$secondary-color;
+
+  img {
+    width: 80%;
+    align-self: center;
+  }
+
+  #caseTitle {
+    text-align: center;
+  }
+
+  #caseDescription {
+    text-align: justify;
+    margin: 0 16px;
+  }
+
+  #contributionsTitle {
+    margin: 26px 16px 0 16px;
+  }
+
+  #contributionsList {
+
+    li {
+      margin: 13px 16px;
+      text-align: justify;
+      list-style: none;
+    }
+
+  }
+
+}
