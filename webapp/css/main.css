@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 #menuNav {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 #menuNav #language {
   font-weight: 100;
@@ -9,6 +12,7 @@
   display: flex;
   align-items: center;
   padding-right: 4px;
+  margin-right: 32px;
 }
 #menuNav button {
   background: transparent;
@@ -102,6 +106,7 @@
   align-items: center;
   background: black;
   color: #f7f7ff;
+  margin-top: 65px;
 }
 #firstImpressionSection #profilePicture1 {
   width: 48%;

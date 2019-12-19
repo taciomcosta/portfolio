@@ -4,8 +4,11 @@
 $toggle-duration: 0.3s;
 
 #menuNav {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 
   #language {
     font-weight: 100;
@@ -13,6 +16,7 @@ $toggle-duration: 0.3s;
     display: flex;
     align-items: center;
     padding-right: 4px;
+    margin-right: 32px;
   }
 
   button {
