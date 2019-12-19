@@ -17,7 +17,7 @@ export const pt_br = {
   "teamwork": "Equipe",
   "teamworkDescription": "Ajudar os outros ao máximo. Aprender com os outros ao máximo.",
   "whatAreYouDoing": "O que você está fazendo?",
-  "whatAreYouDoingDescription": "Agora eu trabalho para a GreenYellow como Arquiteto de Software e Back-end Lead. Há pouco, iniciei com Golang e Kotlin. Também conheci o incrível mundo das ações.",
+  "whatAreYouDoingDescription": "Agora eu trabalho para a GreenYellow como Arquiteto de Software e Back-end Lead. Há pouco, iniciei com Golang e Kotlin. Conheci também o incrível mundo das ações.",
   "hobbies": "Hobbies",
   "booksHobby": "livros",
   "musicHobby": "música",
