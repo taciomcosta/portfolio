@@ -259,7 +259,7 @@
 }
 
 #caseDetailsSection {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding-top: 10%;
   background: #f7f7ff;
@@ -282,6 +282,14 @@
   margin: 13px 16px;
   text-align: justify;
   list-style: none;
+}
+#caseDetailsSection #back {
+  align-self: center;
+  margin-top: 13px;
+  padding: 8px;
+  width: auto;
+  background: transparent;
+  border: 1px solid black;
 }
 
 *, body {

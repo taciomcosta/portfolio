@@ -1,7 +1,7 @@
 @use 'colors';
 
 #caseDetailsSection {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding-top: 10%;
   background: colors.$secondary-color;
@@ -31,7 +31,15 @@
       text-align: justify;
       list-style: none;
     }
+  }
 
+  #back {
+    align-self: center;
+    margin-top: 13px;
+    padding: 8px;
+    width: auto;
+    background: transparent;
+    border: 1px solid colors.$primary-color;
   }
 
 }

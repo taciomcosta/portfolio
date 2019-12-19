@@ -31,3 +31,30 @@ export function closeMenu() {
   const menu = document.getElementById('menuToggleInput');
   menu.checked = false;
 }
+
+export function handleCase() {
+  closeSection('casesSection');
+  openSection('caseDetailsSection');
+  focusOnSection('caseDetailsSection');
+}
+
+function closeSection(id) {
+  const casesSection = document.getElementById(id);
+  casesSection.style.display = 'none';
+
+}
+
+function openSection(id) {
+  const caseDetailsSection = document.getElementById(id);
+  caseDetailsSection.style.display = 'flex';
+}
+
+function focusOnSection(id) {
+  location.href = '#' + id;
+}
+
+export function handleClosingCase() {
+  closeSection('caseDetailsSection');
+  openSection('casesSection');
+  focusOnSection('casesSection');
+}
