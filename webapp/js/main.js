@@ -1,5 +1,5 @@
-import { en_en } from "./languages/en_en.js";
-import { pt_br } from "./languages/pt_br.js";
+import { en_en, dynamic_en_en } from "./languages/en_en.js";
+import { pt_br, dynamic_pt_br } from "./languages/pt_br.js";
 
 export function main() {
   setUpLanguage();
@@ -32,10 +32,34 @@ export function closeMenu() {
   menu.checked = false;
 }
 
-export function handleCase() {
+export function handleCase(event) {
+  fillCaseContent(event.target.id);
   closeSection('casesSection');
   openSection('caseDetailsSection');
   focusOnSection('caseDetailsSection');
+}
+
+function fillCaseContent(caseId) {
+  const selectedLanguage = document.getElementById('selectedLanguage');
+  const content = getCaseContent(caseId, selectedLanguage.innerText);
+  document.getElementById('caseImage').src = 'res/images/' + content.image;
+  document.getElementById('caseTitle').innerText = content.name;
+  document.getElementById('caseDescription').innerText = content.description;
+  generateChildren('techStackChips', content.techStack.map(tech => `<span>${tech}</span>`));
+  generateChildren('contributionsList', content.contributions.map(tech => `<li class="description">${tech}</li>`));
+}
+
+function generateChildren(parentId, childrenList) {
+  const parent = document.getElementById(parentId)
+  parent.innerHTML = '';
+  childrenList.forEach(child => parent.innerHTML += child);
+}
+
+function getCaseContent(caseId, language) {
+  if (language === 'Português')
+    return dynamic_pt_br.cases.filter(c => c.id === caseId).pop();
+  else
+    return dynamic_en_en.cases.filter(c => c.id === caseId).pop();
 }
 
 function closeSection(id) {
