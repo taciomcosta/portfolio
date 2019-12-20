@@ -28,6 +28,7 @@ export const pt_br = {
   "entrepreneurshipInterest": "empreender",
   "investingInterest": "investimentos",
   "educationInterest": "educação",
+  "back": "VOLTAR"
 }
 
 export const dynamic_pt_br = {

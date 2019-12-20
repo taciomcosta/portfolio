@@ -25,6 +25,7 @@ export function switchLanguage() {
   else
     selectedLanguage.innerText = 'English';
   setUpLanguage();
+  fillCaseContent();
 }
 
 export function closeMenu() {
@@ -33,15 +34,16 @@ export function closeMenu() {
 }
 
 export function handleCase(event) {
-  fillCaseContent(event.target.id);
+  document.getElementById('selectedCase').innerText = event.target.id;
+  fillCaseContent();
   closeSection('casesSection');
   openSection('caseDetailsSection');
   focusOnSection('caseDetailsSection');
 }
 
-function fillCaseContent(caseId) {
+function fillCaseContent() {
   const selectedLanguage = document.getElementById('selectedLanguage');
-  const content = getCaseContent(caseId, selectedLanguage.innerText);
+  const content = getCaseContent(selectedLanguage.innerText);
   document.getElementById('caseImage').src = 'res/images/' + content.image;
   document.getElementById('caseTitle').innerText = content.name;
   document.getElementById('caseDescription').innerText = content.description;
@@ -55,7 +57,8 @@ function generateChildren(parentId, childrenList) {
   childrenList.forEach(child => parent.innerHTML += child);
 }
 
-function getCaseContent(caseId, language) {
+function getCaseContent(language) {
+  const caseId = document.getElementById('selectedCase').innerText;
   if (language === 'Português')
     return dynamic_pt_br.cases.filter(c => c.id === caseId).pop();
   else
