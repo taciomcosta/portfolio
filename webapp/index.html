@@ -167,11 +167,14 @@
 </body>
 
 <script type="module">
-  import { main, switchLanguage, closeMenu, handleCase, handleClosingCase } from './js/main.js';
+  import { main, switchLanguage, closeMenu, } from './js/main.js';
+  import { handleCase, handleClosingCase } from './js/cases.js';
+
   window.switchLanguage = switchLanguage;
   window.closeMenu = closeMenu;
   window.handleCase = handleCase;
   window.handleClosingCase = handleClosingCase;
+
   main();
 </script>
 
