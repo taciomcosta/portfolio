@@ -107,13 +107,13 @@ export const dynamic_en_en = {
     {
       "id": "empireEstateCase",
       "name": "Empire Estate",
-      "image": "easyvision.png",
-      "description": "Here goes your description about Empire Estate",
-      "techStack": ["PHP", "JavaScript", "Bootstrap 4"],
+      "image": "empireestate.png",
+      "description": "Empire Estate is a Real Estate Management System aimed for real estate companies and people looking for new places to live.",
+      "techStack": ["PHP", "JavaScript", "Bootstrap", "MySQL"],
       "contributions": [
-        "ee 1",
-        "ee 2",
-        "ee 3",
+        "Implemented admin and end-user views using PHP sessions and MySQL database, allowing each user to have a customized experience;",
+        "Implemented photos gallery using Bootstrap 4 and LESS, thus improving how real estates look like for the end users;",
+        "Integrated Google Maps API so that the clients could have a better grasp about the location they were looking for;",
       ]
     },
   ]

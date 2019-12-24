@@ -105,13 +105,13 @@ export const dynamic_pt_br = {
     {
       "id": "empireEstateCase",
       "name": "Empire Estate",
-      "image": "easyvision.png",
-      "description": "Descrição aqui",
+      "image": "empireestate.png",
+      "description": "Empire Estate é um Sistema de Gerenciamento de Imóveis voltado para imobiliárias e pessoas procurando um novo lugar para viver.",
       "techStack": ["PHP", "JavaScript", "Bootstrap 4"],
       "contributions": [
-        "ee 1",
-        "ee 2",
-        "ee 3",
+        "Implementou views de Admin, end-user e funcionalidade de favoritos, utilizando PHP sessions e o SGDB MySQL, e permitindo a cada usuário ter uma experiência customizada",
+        "Implementou galeria de fotos utilizando Bootstrap 4 e LESS, melhorando a maneira como os imóveis eram visualizados pelos usuários;",
+        "Integrou a API do Google Maps para que os clientes pudessem ter melhores noções sobre a localização do imóvel procurado;",
       ]
     },
   ]
