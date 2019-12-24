@@ -1,5 +1,6 @@
 import { en_en } from "./languages/en_en.js";
 import { pt_br } from "./languages/pt_br.js";
+import { fillCaseContent } from './cases.js';
 
 export function main() {
   setUpLanguage();

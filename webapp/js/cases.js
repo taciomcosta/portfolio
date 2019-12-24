@@ -9,7 +9,7 @@ export function handleCase(event) {
   focusOnSection('caseDetailsSection');
 }
 
-function fillCaseContent() {
+export function fillCaseContent() {
   const selectedLanguage = document.getElementById('selectedLanguage');
   const content = getCaseContent(selectedLanguage.innerText);
   document.getElementById('caseImage').src = 'res/images/' + content.image;
