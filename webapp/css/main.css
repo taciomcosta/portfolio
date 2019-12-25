@@ -293,25 +293,40 @@
 }
 
 #memoirsSection {
-  padding: 10%;
+  width: 100%;
+  padding-top: 10%;
   background: #f7f7ff;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .memoir {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
-  margin: 13px 16px;
+  margin: 0px 5% 26px 5%;
 }
 .memoir img {
   width: 30%;
   border: 1px solid #60656f;
   margin-right: 13px;
 }
-.memoir .text {
-  width: 100%;
+.memoir .memoir-title {
+  font-size: 0.87rem;
+  font-size: 3.9vw;
+}
+.memoir .memoir-date {
+  font-size: 3vw;
+  color: #60656f;
+}
+.memoir .memoir-description {
+  font-size: 3vw;
+  text-align: justify;
+}
+.memoir .memoir-description a {
+  color: #279AF1;
+  text-decoration: none;
 }
 
 *, body {

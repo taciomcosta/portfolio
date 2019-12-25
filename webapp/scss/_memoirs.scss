@@ -1,18 +1,19 @@
 @use 'colors';
 
 #memoirsSection {
-  padding: 10%;
+  width: 100%;
+  padding-top: 10%;
   background: colors.$secondary-color;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .memoir {
-  width: 100%;
-
+  width: 90%;
   display: flex;
   flex-direction: row;
-  margin: 13px 16px;
+  margin: 0px 5% 26px 5%;
 
   img {
     width: 30%;
@@ -20,11 +21,29 @@
     margin-right: 13px;
   }
 
-  .text {
-    width: 100%;
+  .memoir-title {
+    font-size: 0.87rem;
+    font-size: 3.9vw;
   }
 
-  
+  .memoir-date{
+    font-size: 3vw;
+    color: colors.$third-color;
+  }
+
+  .memoir-description {
+    font-size: 3vw;
+    text-align: justify;
+
+    a {
+      color: colors.$fourth-color;
+      text-decoration: none;
+    }
+  }
+
+
+
+
 }
 
 
