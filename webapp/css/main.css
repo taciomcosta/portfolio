@@ -325,8 +325,42 @@
   text-align: justify;
 }
 .memoir .memoir-description a {
-  color: #279AF1;
+  color: #f7f7ff;
+  text-decoration: underline;
+}
+
+#contactSection {
+  border: 1px solid black;
+  padding-top: 10%;
+  display: flex;
+  background: black;
+  color: #f7f7ff;
+}
+
+#contacts {
+  flex-direction: column;
+  margin-left: 16px;
+}
+#contacts li {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 26px;
+}
+#contacts li img {
+  width: 15%;
+}
+#contacts li span {
+  border: 1px solid black;
+  margin-left: 13px;
+  font-size: 0.87rem;
+  font-size: 3.9vw;
+}
+#contacts a {
   text-decoration: none;
+  color: #f7f7ff;
+  cursor: pointer;
 }
 
 *, body {

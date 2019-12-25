@@ -1,0 +1,42 @@
+@use 'colors';
+
+#contactSection {
+
+  border: 1px solid black;
+
+  padding-top: 10%;
+  display: flex;
+  background: colors.$primary-color;
+  color: colors.$secondary-color;
+}
+
+#contacts {
+  flex-direction: column;
+  margin-left: 16px;
+
+  li {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 26px;
+
+    img {
+      width: 15%;
+    }
+
+    span {
+      border: 1px solid black;
+      margin-left: 13px;
+      font-size: 0.87rem;
+      font-size: 3.9vw;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: colors.$secondary-color;
+    cursor: pointer;
+  }
+
+}
