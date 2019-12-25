@@ -27,7 +27,8 @@ export const en_en = {
   "entrepreneurshipInterest": "entrepreneurship",
   "investingInterest": "investing",
   "educationInterest": "education",
-  "back": "BACK"
+  "back": "BACK",
+  "contributionsTitle": "Contributions"
 }
 
 export const dynamic_en_en = {
