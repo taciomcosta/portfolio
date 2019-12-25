@@ -4,6 +4,7 @@ import { fillCaseContent } from './cases.js';
 
 export function main() {
   setUpLanguage();
+  enableSmoothAnchorScroll();
 }
 
 function setUpLanguage() {
@@ -32,4 +33,15 @@ export function switchLanguage() {
 export function closeMenu() {
   const menu = document.getElementById('menuToggleInput');
   menu.checked = false;
+}
+
+function enableSmoothAnchorScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth',
+      });
+    });
+  });
 }
