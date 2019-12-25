@@ -292,6 +292,28 @@
   border: 1px solid black;
 }
 
+#memoirsSection {
+  padding: 10%;
+  background: #f7f7ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.memoir {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 13px 16px;
+}
+.memoir img {
+  width: 30%;
+  border: 1px solid #60656f;
+  margin-right: 13px;
+}
+.memoir .text {
+  width: 100%;
+}
+
 *, body {
   margin: 0;
   padding: 0;

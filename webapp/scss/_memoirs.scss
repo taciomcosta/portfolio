@@ -1,0 +1,31 @@
+@use 'colors';
+
+#memoirsSection {
+  padding: 10%;
+  background: colors.$secondary-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.memoir {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  margin: 13px 16px;
+
+  img {
+    width: 30%;
+    border: 1px solid colors.$third-color;
+    margin-right: 13px;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  
+}
+
+
+
