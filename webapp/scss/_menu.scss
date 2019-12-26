@@ -126,7 +126,7 @@ $toggle-duration: 0.3s;
     height: 45px;
 
     #language {
-      font-size: fonts.$font-size-tablet;
+      font-size: fonts.$font-size-tablet-xs;
     }
   }
 
@@ -150,7 +150,7 @@ $toggle-duration: 0.3s;
 
       li, a {
         color: colors.$secondary-color;
-        font-size: fonts.$font-size-tablet;
+        font-size: fonts.$font-size-tablet-xs;
         padding: 0;
         margin-right: 20px;
         align-self: center;

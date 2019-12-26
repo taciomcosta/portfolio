@@ -108,7 +108,7 @@
     height: 45px;
   }
   #menuNav #language {
-    font-size: 2.2vw;
+    font-size: 2.7vw;
   }
 
   #menuToggle {
@@ -129,7 +129,7 @@
   }
   #menuToggle #menu li, #menuToggle #menu a {
     color: #f7f7ff;
-    font-size: 2.2vw;
+    font-size: 2.7vw;
     padding: 0;
     margin-right: 20px;
     align-self: center;
@@ -189,6 +189,33 @@
   margin-bottom: 32px;
 }
 
+@media (min-width: 720px) and (max-width: 1024px) {
+  #firstImpressionSection #profilePicture1 {
+    width: 33%;
+    height: 33%;
+    margin-top: 10%;
+  }
+  #firstImpressionSection #nameAndRole {
+    margin-top: 8%;
+  }
+  #firstImpressionSection #nameAndRole #name {
+    font-size: 3.6vw;
+  }
+  #firstImpressionSection #nameAndRole #role {
+    margin-top: 3%;
+    font-size: 3.1vw;
+  }
+  #firstImpressionSection #meetMe {
+    margin: 14.02% auto;
+    width: 25.02%;
+    padding: 4.75% 0;
+    font-size: 2.9vw;
+  }
+  #firstImpressionSection #quote {
+    font-size: 2.4vw;
+    margin-bottom: 10%;
+  }
+}
 .title {
   font-size: 1rem;
   font-size: 5vw;

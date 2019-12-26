@@ -66,5 +66,37 @@ $first-impression-dimension: 52.5%;
 }
 
 @include breakpoints.tablet {
-  
+  #firstImpressionSection {
+    #profilePicture1 {
+      width: 33%;
+      height: 33%;
+      margin-top: 10%;
+    }
+
+    #nameAndRole {
+      margin-top: 8%;
+
+      #name {
+        font-size: fonts.$font-size-tablet-lg;
+      }
+
+      #role {
+        margin-top: 3%;
+        font-size: fonts.$font-size-tablet-md;
+      }
+    }
+
+    #meetMe {
+      margin: 14.02% auto;
+      width: 25.02%;
+      padding: 4.75% 0;
+      font-size: fonts.$font-size-tablet-sm;
+    }
+
+    #quote {
+      font-size: fonts.$font-size-tablet-xs - 0.3vw;
+      margin-bottom: 10%;
+    }
+  }
+
 }
