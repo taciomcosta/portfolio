@@ -1,5 +1,6 @@
 @use 'fonts';
 @use 'colors';
+@use 'breakpoints';
 
 $toggle-duration: 0.3s;
 
@@ -9,6 +10,9 @@ $toggle-duration: 0.3s;
   display: flex;
   justify-content: space-between;
   z-index: 1;
+  background: colors.$primary-color;
+  color: colors.$secondary-color;
+  padding: 16px;
 
   #language {
     font-weight: 100;
@@ -29,7 +33,6 @@ $toggle-duration: 0.3s;
   #arrowIcon {
     transform: rotate(180deg);
   }
-
 }
 
 #menuToggle {
@@ -115,4 +118,44 @@ $toggle-duration: 0.3s;
     width: 100%;
     font-size: 0.87rem;
   }
+}
+
+@include breakpoints.tablet {
+
+  #menuNav {
+    height: 45px;
+
+    #language {
+      font-size: fonts.$font-size-tablet;
+    }
+  }
+
+  #menuToggle {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    span, input {
+      display: none;
+    }
+
+    #menu {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      background: colors.$primary-color;
+
+      li, a {
+        color: colors.$secondary-color;
+        font-size: fonts.$font-size-tablet;
+        padding: 0;
+        margin-right: 20px;
+        align-self: center;
+      }
+    }
+  }
+  
 }

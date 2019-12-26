@@ -1,0 +1,8 @@
+$breakpoint-tablet: 720px;
+$breakpoint-desktop: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}

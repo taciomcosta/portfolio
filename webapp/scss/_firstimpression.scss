@@ -1,5 +1,6 @@
 @use 'fonts';
 @use 'colors';
+@use 'breakpoints';
 
 $first-impression-dimension: 52.5%;
 
@@ -62,4 +63,8 @@ $first-impression-dimension: 52.5%;
     font-size: 3.4vw;
     margin-bottom: 32px;
   }
+}
+
+@include breakpoints.tablet {
+  
 }
