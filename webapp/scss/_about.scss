@@ -1,4 +1,6 @@
+@use 'fonts';
 @use 'colors';
+@use 'breakpoints';
 
 .title {
   font-size: 1rem;
@@ -65,4 +67,49 @@
     width: 52.5%;
     height: 52.5%;
   } 
+}
+
+@include breakpoints.tablet {
+
+  .title {
+    font-size: fonts.$font-size-tablet-lg;
+  }
+
+  .description {
+    font-size: fonts.$font-size-tablet-xs;
+  }
+
+  #aboutSection {
+    padding-top: 15%;
+  }
+
+  #skillsSubsection {
+    .skill {
+      font-size: fonts.$font-size-tablet-xs;
+
+      img {
+        width: 35%;
+        height: 128px;
+      }
+
+      p {
+        width: 80%;
+      }
+
+    }
+
+    .row:nth-child(2) {
+      margin-top: 8%;
+    }
+  }
+
+  #whatAreYouDoingSubsection {
+    margin: 80px 16px;
+
+    img {
+      margin-top: 26px;
+      width: 35%;
+      height: 35%;
+    } 
+  }
 }
