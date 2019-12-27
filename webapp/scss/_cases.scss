@@ -1,4 +1,7 @@
+@use 'fonts';
 @use 'colors';
+@use 'breakpoints';
+
 
 #casesSection {
   padding-top: 18%;
@@ -40,13 +43,37 @@
       padding: 5px;
     }
 
-      &:active {
-        img {
-          filter: none;
-        }
-        span {
-          display: none;
-        }
+    &:active {
+      img {
+        filter: none;
       }
+      span {
+        display: none;
+      }
+    }
   }
+}
+
+@include breakpoints.tablet {
+  #casesSection {
+    padding-top: 10%;
+  }
+
+  #casesList {
+
+    .case {
+      width: 45%;
+      height: 256px;
+      margin: 8px;
+
+      span {
+        font-size: fonts.$font-size-tablet-sm;
+      }
+
+      img {
+        filter: none;
+      }
+    }
+  }
+
 }
