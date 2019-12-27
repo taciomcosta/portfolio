@@ -106,15 +106,18 @@
 @media (min-width: 720px) and (max-width: 1024px) {
   #menuNav {
     height: 45px;
+    padding: 24px;
   }
   #menuNav #language {
     font-size: 2.7vw;
+    margin-right: 64px;
   }
 
   #menuToggle {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin: 0 0 0 32px;
   }
   #menuToggle span, #menuToggle input {
     display: none;
@@ -289,6 +292,9 @@
     padding-top: 15%;
   }
 
+  #skillsSubsection {
+    padding: 32px;
+  }
   #skillsSubsection .skill {
     font-size: 2.7vw;
   }
@@ -304,7 +310,7 @@
   }
 
   #whatAreYouDoingSubsection {
-    margin: 80px 16px 40px 16px;
+    margin: 80px 32px 40px 32px;
   }
   #whatAreYouDoingSubsection img {
     margin-top: 26px;
@@ -613,6 +619,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 32px;
   }
 
   .chips-section {
