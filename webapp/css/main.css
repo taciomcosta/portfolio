@@ -462,6 +462,10 @@
   border: 1px solid #60656f;
   margin-right: 13px;
 }
+.memoir .text {
+  display: flex;
+  flex-direction: column;
+}
 .memoir .memoir-title {
   font-size: 0.87rem;
   font-size: 3.9vw;
@@ -479,6 +483,25 @@
   text-decoration: underline;
 }
 
+@media (min-width: 720px) and (max-width: 1024px) {
+  #memoirsSection {
+    padding-top: 10%;
+  }
+
+  .memoir {
+    margin-top: 40px;
+  }
+  .memoir .text {
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+  .memoir .memoir-title {
+    font-size: 3.6vw;
+  }
+  .memoir .memoir-date, .memoir .memoir-description {
+    font-size: 2.7vw;
+  }
+}
 #contactSection {
   border: 1px solid black;
   padding-top: 10%;

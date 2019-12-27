@@ -1,4 +1,6 @@
+@use 'fonts';
 @use 'colors';
+@use 'breakpoints';
 
 #memoirsSection {
   width: 100%;
@@ -21,12 +23,17 @@
     margin-right: 13px;
   }
 
+  .text { 
+    display: flex;
+    flex-direction: column;
+  }
+
   .memoir-title {
     font-size: 0.87rem;
     font-size: 3.9vw;
   }
 
-  .memoir-date{
+  .memoir-date {
     font-size: 3vw;
     color: colors.$third-color;
   }
@@ -40,11 +47,27 @@
       text-decoration: underline;
     }
   }
-
-
-
-
 }
 
+@include breakpoints.tablet {
+  #memoirsSection {
+    padding-top: 10%;
+  }
 
+  .memoir {
+    margin-top: 40px;
+    
+    .text {
+      justify-content: space-between;
+      margin: 0 20px;
+    }
 
+    .memoir-title {
+      font-size: fonts.$font-size-tablet-lg;
+    }
+
+    .memoir-date, .memoir-description {
+      font-size: fonts.$font-size-tablet-xs;
+    }
+  }
+}
