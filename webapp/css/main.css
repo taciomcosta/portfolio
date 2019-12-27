@@ -304,7 +304,7 @@
   }
 
   #whatAreYouDoingSubsection {
-    margin: 80px 16px;
+    margin: 80px 16px 40px 16px;
   }
   #whatAreYouDoingSubsection img {
     margin-top: 26px;
@@ -508,6 +508,24 @@ section {
   color: #f7f7ff;
   font-size: 0.75rem;
   font-size: 3.4vw;
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+  #hobbiesAndInterests {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #hobbiesAndInterests .chips-section {
+    margin: 0px 32px;
+    font-size: 2.7vw;
+    width: 50%;
+  }
+  #hobbiesAndInterests .chips-section .chips span {
+    margin: 13px 13px 0px 0;
+    padding: 8px;
+    font-size: 1.7vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
