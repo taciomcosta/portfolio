@@ -536,6 +536,29 @@
   cursor: pointer;
 }
 
+@media (min-width: 720px) and (max-width: 1024px) {
+  #contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 32px;
+  }
+  #contacts a {
+    width: 80%;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  #contacts a img {
+    width: 10%;
+  }
+  #contacts a span {
+    font-size: 2.7vw;
+  }
+  #contacts a li {
+    margin-bottom: 0;
+  }
+}
 *, body {
   margin: 0;
   padding: 0;
