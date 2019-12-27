@@ -98,5 +98,11 @@ $first-impression-dimension: 52.5%;
       margin-bottom: 10%;
     }
   }
+}
+
+@include breakpoints.desktop {
+
+  #firstImpressionSection {
+  }
 
 }

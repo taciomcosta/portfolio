@@ -6,3 +6,9 @@ $breakpoint-desktop: 1024px;
     @content;
   }
 }
+
+@mixin desktop {
+  @media(min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}

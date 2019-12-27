@@ -161,3 +161,44 @@ $toggle-duration: 0.3s;
     }
   }
 }
+
+@include breakpoints.desktop {
+  #menuNav {
+    height: 45px;
+    padding: 24px;
+
+    #language {
+      font-size: fonts.$font-size-desktop-xs;
+      margin-right: 64px;
+    }
+  }
+
+  #menuToggle {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 0 0 32px;
+    
+    span, input {
+      display: none;
+    }
+
+    #menu {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      background: colors.$primary-color;
+
+      li, a {
+        color: colors.$secondary-color;
+        font-size: fonts.$font-size-desktop-xs;
+        padding: 0;
+        margin-right: 20px;
+        align-self: center;
+      }
+    }
+  }
+}
