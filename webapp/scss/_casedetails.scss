@@ -1,4 +1,6 @@
+@use 'fonts';
 @use 'colors';
+@use 'breakpoints';
 
 #caseDetailsSection {
   display: none;
@@ -40,6 +42,47 @@
     width: auto;
     background: transparent;
     border: 1px solid colors.$primary-color;
+  }
+
+}
+
+@include breakpoints.tablet {
+
+  #caseTitle {
+    font-size: fonts.$font-size-tablet-lg;
+    margin: 20px 0;
+  }
+
+  #caseDescription {
+    font-size: fonts.$font-size-tablet-xs;
+    text-align: center !important;
+    margin: 0 32px !important;
+  }
+
+  #techStackSubsection {
+    margin: 40px 32px;
+
+    #techStack {
+      font-size: fonts.$font-size-tablet-md;
+    }
+  }
+
+  #contributionsTitle {
+    margin: 0 32px !important;
+    font-size: fonts.$font-size-tablet-md;
+  }
+
+  #contributionsList {
+    li {
+      margin: 40px 32px !important;
+      font-size: fonts.$font-size-tablet-xs;
+    }
+  }
+
+  #back {
+    font-size: fonts.$font-size-tablet-sm;
+    margin-top: 40px !important;
+    padding: 20px !important;
   }
 
 }

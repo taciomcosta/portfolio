@@ -69,20 +69,20 @@ section {
     flex-direction: row;
     justify-content: space-between;
 
-    .chips-section {
-      margin: 0px 32px;
-      font-size: fonts.$font-size-tablet-xs;
-      width: 50%;
+  }
 
-      .chips {
-        span {
-          margin: 13px 13px 0px 0;
-          padding: 8px;
-          font-size: fonts.$font-size-tablet-xs - 1vw;
-        }
+  .chips-section {
+    margin: 0px 32px;
+    font-size: fonts.$font-size-tablet-xs;
+    width: 50%;
+
+    .chips {
+      span {
+        margin: 13px 13px 0px 0;
+        padding: 8px;
+        font-size: fonts.$font-size-tablet-xs - 1vw;
       }
     }
   }
-
 
 }
