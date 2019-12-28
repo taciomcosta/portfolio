@@ -114,3 +114,69 @@
     } 
   }
 }
+
+@include breakpoints.desktop {
+  .title {
+    font-size: fonts.$font-size-desktop-lg;
+  }
+
+  .description {
+    font-size: fonts.$font-size-desktop-xs;
+  }
+
+  #aboutSection {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skillsSubsection {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1024px;
+
+    .row {
+      display: flex;
+      justify-content: space-around;
+      width: 1024px;
+      margin: 0 !important;
+    }
+
+    .row:nth-child(2) {
+      margin-top: 80px !important;
+    }
+
+    .skill {
+      font-size: fonts.$font-size-desktop-xs;
+      width: auto;
+
+      img {
+        width: 128px;
+        height: 128px;
+      }
+
+      p {
+        width: 256px;
+      }
+
+    }
+
+    .row:nth-child(2) {
+      margin-top: 8%;
+    }
+  }
+
+  #whatAreYouDoingSubsection {
+    margin: 80px 32px 40px 32px;
+
+    img {
+      margin-top: 26px;
+      width: 35%;
+      height: 35%;
+    } 
+  }
+}
