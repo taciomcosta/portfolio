@@ -403,6 +403,13 @@
     width: 35%;
     height: 35%;
   }
+
+  #hobbiesAndInterests {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 32px;
+  }
 }
 @media (min-width: 1025px) {
   .title {
@@ -453,7 +460,7 @@
   }
 
   #whatAreYouDoingSubsection {
-    margin: 80px 32px 40px 32px;
+    margin: 80px 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -468,6 +475,14 @@
   #whatAreYouDoingSubsection div {
     order: 2;
     width: 524px;
+  }
+
+  #hobbiesAndInterests {
+    width: 820px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
   }
 }
 #casesSection {
@@ -767,13 +782,6 @@ section {
 }
 
 @media (min-width: 720px) and (max-width: 1025px) {
-  #hobbiesAndInterests {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 32px;
-  }
-
   .chips-section {
     margin: 0px 32px;
     font-size: 2.7vw;
@@ -781,8 +789,20 @@ section {
   }
   .chips-section .chips span {
     margin: 13px 13px 0px 0;
-    padding: 8px;
+    padding: 10px;
     font-size: 1.7vw;
+  }
+}
+@media (min-width: 1025px) {
+  .chips-section {
+    margin: 0px;
+    font-size: 24px;
+    width: 50%;
+  }
+  .chips-section .chips span {
+    margin: 13px 13px 0px 0;
+    padding: 10px;
+    font-size: 14px;
   }
 }
 

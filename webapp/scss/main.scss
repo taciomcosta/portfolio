@@ -64,13 +64,6 @@ section {
 }
 
 @include breakpoints.tablet {
-  #hobbiesAndInterests {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 32px;
-
-  }
 
   .chips-section {
     margin: 0px 32px;
@@ -80,8 +73,26 @@ section {
     .chips {
       span {
         margin: 13px 13px 0px 0;
-        padding: 8px;
+        padding: 10px;
         font-size: fonts.$font-size-tablet-xs - 1vw;
+      }
+    }
+  }
+
+}
+
+@include breakpoints.desktop {
+
+  .chips-section {
+    margin: 0px;
+    font-size: fonts.$font-size-desktop-md;
+    width: 50%;
+
+    .chips {
+      span {
+        margin: 13px 13px 0px 0;
+        padding: 10px;
+        font-size: fonts.$font-size-desktop-xs - 6px;
       }
     }
   }
