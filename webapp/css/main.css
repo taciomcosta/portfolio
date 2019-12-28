@@ -103,7 +103,7 @@
   font-size: 0.87rem;
 }
 
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 720px) and (max-width: 1025px) {
   #menuNav {
     height: 45px;
     padding: 24px;
@@ -138,13 +138,13 @@
     align-self: center;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   #menuNav {
     height: 45px;
     padding: 24px;
   }
   #menuNav #language {
-    font-size: 2vw;
+    font-size: 20px;
     margin-right: 64px;
   }
 
@@ -167,12 +167,19 @@
   }
   #menuToggle #menu li, #menuToggle #menu a {
     color: #f7f7ff;
-    font-size: 2vw;
+    font-size: 20px;
     padding: 0;
     margin-right: 20px;
     align-self: center;
   }
 }
+.first-impression-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 #firstImpressionSection {
   display: flex;
   flex-direction: column;
@@ -181,29 +188,29 @@
   color: #f7f7ff;
   margin-top: 65px;
 }
-#firstImpressionSection #profilePicture1 {
+#firstImpressionSection .first-impression-row > #profilePicture1 {
   width: 48%;
   height: 48%;
   margin-top: 10%;
 }
-#firstImpressionSection #nameAndRole {
+#firstImpressionSection .first-impression-row > #nameAndRole {
   width: 52.5%;
   margin-top: 16.46%;
   flex-direction: column;
   display: flex;
   text-align: center;
 }
-#firstImpressionSection #nameAndRole #name {
+#firstImpressionSection .first-impression-row > #nameAndRole #name {
   font-size: 1rem;
   font-size: 4vw;
 }
-#firstImpressionSection #nameAndRole #role {
+#firstImpressionSection .first-impression-row > #nameAndRole #role {
   font-size: 0.87rem;
   font-size: 3.4vw;
   font-weight: 100;
   margin-top: 6.96%;
 }
-#firstImpressionSection #meetMe {
+#firstImpressionSection .first-impression-row > #meetMe {
   margin: 14.02% auto;
   width: 39.02%;
   padding: 6.75% 0;
@@ -213,11 +220,11 @@
   text-decoration: none;
   text-align: center;
 }
-#firstImpressionSection #meetMe:active {
+#firstImpressionSection .first-impression-row > #meetMe:active {
   background: #f7f7ff;
   color: black;
 }
-#firstImpressionSection #quote {
+#firstImpressionSection .first-impression-row > #quote {
   width: 78.75%;
   display: flex;
   flex-direction: column;
@@ -227,31 +234,69 @@
   margin-bottom: 32px;
 }
 
-@media (min-width: 720px) and (max-width: 1024px) {
-  #firstImpressionSection #profilePicture1 {
+@media (min-width: 720px) and (max-width: 1025px) {
+  #firstImpressionSection .first-impression-row > #profilePicture1 {
     width: 33%;
     height: 33%;
     margin-top: 10%;
   }
-  #firstImpressionSection #nameAndRole {
+  #firstImpressionSection .first-impression-row > #nameAndRole {
     margin-top: 8%;
   }
-  #firstImpressionSection #nameAndRole #name {
+  #firstImpressionSection .first-impression-row > #nameAndRole #name {
     font-size: 3.6vw;
   }
-  #firstImpressionSection #nameAndRole #role {
+  #firstImpressionSection .first-impression-row > #nameAndRole #role {
     margin-top: 3%;
     font-size: 3.1vw;
   }
-  #firstImpressionSection #meetMe {
+  #firstImpressionSection .first-impression-row > #meetMe {
     margin: 14.02% auto;
     width: 25.02%;
     padding: 4.75% 0;
     font-size: 2.9vw;
   }
-  #firstImpressionSection #quote {
+  #firstImpressionSection .first-impression-row > #quote {
     font-size: 2.4vw;
     margin-bottom: 10%;
+  }
+}
+@media (min-width: 1025px) {
+  #firstImpressionSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #firstImpressionSection #profilePicture1 {
+    order: 2;
+    width: 256px;
+    height: 256px;
+    margin: 0;
+  }
+  #firstImpressionSection #nameAndRole {
+    order: 1;
+    margin-top: 0;
+    width: 50%;
+  }
+  #firstImpressionSection #nameAndRole #name {
+    font-size: 48px;
+  }
+  #firstImpressionSection #nameAndRole #role {
+    margin-top: 3%;
+    font-size: 24px;
+  }
+  #firstImpressionSection #meetMe {
+    order: 3;
+    margin: 0;
+    width: 19.02%;
+    padding: 4.75% 0;
+    font-size: 24px;
+  }
+  #firstImpressionSection #quote {
+    order: 4;
+    margin-bottom: 0;
+    width: auto;
+    font-size: 18px;
   }
 }
 .title {
@@ -314,7 +359,7 @@
   height: 52.5%;
 }
 
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 720px) and (max-width: 1025px) {
   .title {
     font-size: 3.6vw;
   }
@@ -397,7 +442,7 @@
   display: none;
 }
 
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 720px) and (max-width: 1025px) {
   #casesSection {
     padding-top: 10%;
   }
@@ -448,7 +493,7 @@
   border: 1px solid black;
 }
 
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 720px) and (max-width: 1025px) {
   #caseTitle {
     font-size: 3.6vw;
     margin: 20px 0;
@@ -524,7 +569,7 @@
   text-decoration: underline;
 }
 
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 720px) and (max-width: 1025px) {
   #memoirsSection {
     padding-top: 10%;
   }
@@ -577,7 +622,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 720px) and (max-width: 1025px) {
   #contacts {
     display: flex;
     flex-direction: column;
@@ -649,7 +694,7 @@ section {
   font-size: 3.4vw;
 }
 
-@media (min-width: 720px) and (max-width: 1024px) {
+@media (min-width: 720px) and (max-width: 1025px) {
   #hobbiesAndInterests {
     display: flex;
     flex-direction: row;
