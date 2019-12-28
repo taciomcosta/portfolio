@@ -262,41 +262,43 @@
   }
 }
 @media (min-width: 1025px) {
-  #firstImpressionSection {
-    display: flex;
+  .first-impression-row {
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 820px;
   }
-  #firstImpressionSection #profilePicture1 {
+  .first-impression-row:nth-child(2) {
+    margin-bottom: 65px;
+  }
+
+  #firstImpressionSection .first-impression-row > #profilePicture1 {
     order: 2;
     width: 256px;
     height: 256px;
-    margin: 0;
+    margin: 8% 0px 0 0;
   }
-  #firstImpressionSection #nameAndRole {
+  #firstImpressionSection .first-impression-row > #nameAndRole {
+    width: 326px;
     order: 1;
-    margin-top: 0;
-    width: 50%;
+    margin: 8% 0 0 0;
   }
-  #firstImpressionSection #nameAndRole #name {
+  #firstImpressionSection .first-impression-row > #nameAndRole #name {
     font-size: 48px;
   }
-  #firstImpressionSection #nameAndRole #role {
+  #firstImpressionSection .first-impression-row > #nameAndRole #role {
     margin-top: 3%;
     font-size: 24px;
   }
-  #firstImpressionSection #meetMe {
-    order: 3;
-    margin: 0;
-    width: 19.02%;
-    padding: 4.75% 0;
-    font-size: 24px;
+  #firstImpressionSection .first-impression-row > #meetMe {
+    margin: 40px 0 0 67px;
+    width: 192px;
+    padding: 20px 0;
+    font-size: 22px;
   }
-  #firstImpressionSection #quote {
-    order: 4;
-    margin-bottom: 0;
-    width: auto;
-    font-size: 18px;
+  #firstImpressionSection .first-impression-row > #quote {
+    font-size: 14px;
+    margin: 40px 0 0 0;
+    width: 256px;
   }
 }
 .title {
