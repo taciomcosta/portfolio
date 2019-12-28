@@ -67,6 +67,12 @@
     width: 52.5%;
     height: 52.5%;
   } 
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @include breakpoints.tablet {
@@ -172,11 +178,21 @@
 
   #whatAreYouDoingSubsection {
     margin: 80px 32px 40px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 820px;
 
     img {
-      margin-top: 26px;
-      width: 35%;
-      height: 35%;
+      order: 1;
+      margin-top: 0;
+      width: 256px;
+      height: 256px;
     } 
+
+    div {
+      order: 2;
+      width: 524px;
+    }
   }
 }

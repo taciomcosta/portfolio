@@ -360,6 +360,10 @@
   width: 52.5%;
   height: 52.5%;
 }
+#whatAreYouDoingSubsection div {
+  display: flex;
+  flex-direction: column;
+}
 
 @media (min-width: 720px) and (max-width: 1025px) {
   .title {
@@ -450,11 +454,20 @@
 
   #whatAreYouDoingSubsection {
     margin: 80px 32px 40px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 820px;
   }
   #whatAreYouDoingSubsection img {
-    margin-top: 26px;
-    width: 35%;
-    height: 35%;
+    order: 1;
+    margin-top: 0;
+    width: 256px;
+    height: 256px;
+  }
+  #whatAreYouDoingSubsection div {
+    order: 2;
+    width: 524px;
   }
 }
 #casesSection {
