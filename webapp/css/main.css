@@ -296,6 +296,10 @@
     padding: 20px 0;
     font-size: 22px;
   }
+  #firstImpressionSection .first-impression-row > #meetMe:hover {
+    background: #f7f7ff;
+    color: black;
+  }
   #firstImpressionSection .first-impression-row > #quote {
     font-size: 16px;
     margin: 40px 0 0 0;

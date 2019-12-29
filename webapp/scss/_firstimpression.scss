@@ -146,6 +146,11 @@ $first-impression-dimension: 52.5%;
       width: 192px;
       padding: 20px 0;
       font-size: fonts.$font-size-desktop-sm;
+
+      &:hover {
+        background: colors.$secondary-color;
+        color: colors.$primary-color;
+      }
     }
 
     .first-impression-row > #quote {
