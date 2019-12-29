@@ -141,7 +141,7 @@
 }
 @media (min-width: 1025px) {
   #menuNav {
-    height: 45px;
+    height: 20px;
     padding: 24px;
   }
   #menuNav #language {
@@ -576,10 +576,19 @@
 #caseDetailsSection {
   display: none;
   flex-direction: column;
+  align-items: center;
   padding-top: 10%;
   background: #f7f7ff;
 }
-#caseDetailsSection img {
+#caseDetailsSection #projectInfo {
+  display: flex;
+  flex-direction: column;
+}
+#caseDetailsSection #projectInfo div {
+  display: flex;
+  flex-direction: column;
+}
+#caseDetailsSection #projectInfo #caseImage {
   width: 80%;
   align-self: center;
 }
@@ -605,6 +614,7 @@
   width: auto;
   background: transparent;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 @media (min-width: 720px) and (max-width: 1025px) {
@@ -640,6 +650,61 @@
     font-size: 2.9vw;
     margin-top: 40px !important;
     padding: 20px !important;
+  }
+}
+@media (min-width: 1025px) {
+  #caseTitle {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+
+  #caseDescription {
+    font-size: 20px;
+    text-align: center !important;
+    margin: 0 32px !important;
+    width: 820px;
+  }
+
+  #caseImage {
+    width: 500px !important;
+  }
+
+  #techStackSubsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+  }
+  #techStackSubsection #techStack {
+    font-size: 24px;
+  }
+
+  #contributionsTitle {
+    margin: 0 !important;
+    font-size: 24px;
+  }
+
+  #contributionsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1024px;
+  }
+  #contributionsList li {
+    width: 450px;
+    margin: 80px 31px 0 31px !important;
+    font-size: 16px !important;
+    line-height: 30px;
+  }
+  #contributionsList li:nth-child(-n+2) {
+    margin-top: 20px !important;
+  }
+
+  #back {
+    font-size: 22px;
+    margin-top: 80px !important;
+    padding: 15px !important;
   }
 }
 #memoirsSection {
