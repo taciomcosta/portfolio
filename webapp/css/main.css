@@ -295,6 +295,7 @@
     width: 192px;
     padding: 20px 0;
     font-size: 22px;
+    transition: background-color 0.2s ease;
   }
   #firstImpressionSection .first-impression-row > #meetMe:hover {
     background: #f7f7ff;
@@ -712,6 +713,11 @@
     font-size: 22px;
     margin-top: 80px !important;
     padding: 15px !important;
+    transition: background-color 0.3s ease;
+  }
+  #back:hover {
+    background: black !important;
+    color: #f7f7ff;
   }
 }
 #memoirsSection {

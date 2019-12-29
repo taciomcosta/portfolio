@@ -157,6 +157,12 @@
     font-size: fonts.$font-size-desktop-sm;
     margin-top: 80px !important;
     padding: 15px !important;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background: colors.$primary-color !important;
+      color: colors.$secondary-color;
+    }
   }
 
 }
