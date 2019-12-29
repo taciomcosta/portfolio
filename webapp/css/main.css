@@ -143,17 +143,19 @@
   #menuNav {
     height: 20px;
     padding: 24px;
+    display: flex;
+    justify-content: center;
   }
   #menuNav #language {
     font-size: 16px;
-    margin-right: 64px;
+    margin-right: 72px;
   }
 
   #menuToggle {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: 0 0 0 32px;
+    margin: 0 370px 0 32px;
   }
   #menuToggle span, #menuToggle input {
     display: none;

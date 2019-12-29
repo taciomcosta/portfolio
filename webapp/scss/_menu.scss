@@ -167,10 +167,12 @@ $toggle-duration: 0.3s;
   #menuNav {
     height: 20px;
     padding: 24px;
+    display: flex;
+    justify-content: center;
 
     #language {
       font-size: fonts.$font-size-desktop-xs;
-      margin-right: 64px;
+      margin-right: 72px;
     }
   }
 
@@ -179,7 +181,7 @@ $toggle-duration: 0.3s;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: 0 0 0 32px;
+    margin: 0 370px 0 32px;
     
     span, input {
       display: none;
