@@ -23,7 +23,7 @@
         <a href="#aboutSection" onclick="closeMenu()">
           <li id="menuAbout">About</li>
         </a>
-        <a href="#casesSection" onclick="closeMenu()">
+        <a id="casesOption" href="#casesSection" onclick="closeMenu()">
           <li id="menuCases">Cases</li>
         </a>
         <a href="#memoirsSection" onclick="closeMenu()">
@@ -115,7 +115,7 @@
       </div>
     </section>
     <section id="casesSection">
-      <input id="selectedCase" value="" type="hidden" />
+      <input id="selectedCase" value="easyVisionCase" type="hidden" />
       <div id="casesList">
         <div class="case" onclick="handleCase(event)">
           <img id="easyVisionCase" src="res/images/easyvision.png" alt="EasyVision">

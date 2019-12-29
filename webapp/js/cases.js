@@ -3,6 +3,7 @@ import { dynamic_pt_br } from "./languages/pt_br.js";
 
 export function handleCase(event) {
   document.getElementById('selectedCase').innerText = event.target.id;
+  document.getElementById('casesOption').href = '#caseDetailsSection';
   fillCaseContent();
   closeSection('casesSection');
   openSection('caseDetailsSection');
@@ -48,6 +49,7 @@ function focusOnSection(id) {
 }
 
 export function handleClosingCase() {
+  document.getElementById('casesOption').href = '#casesSection';
   closeSection('caseDetailsSection');
   openSection('casesSection');
   focusOnSection('casesSection');
