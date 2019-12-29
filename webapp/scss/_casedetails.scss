@@ -33,6 +33,10 @@
     }
   }
 
+  #techStackSubsection {
+    margin-left: 0;
+  }
+
   #contributionsTitle {
     margin: 26px 16px 0 16px;
   }
@@ -72,10 +76,14 @@
   }
 
   #techStackSubsection {
-    margin: 40px 32px;
+    margin: 80px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     #techStack {
       font-size: fonts.$font-size-tablet-md;
+      text-align: center;
     }
   }
 
