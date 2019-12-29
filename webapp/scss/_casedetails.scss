@@ -22,15 +22,15 @@
       width: 80%;
       align-self: center;
     }   
-  }
 
-  #caseTitle {
-    text-align: center;
-  }
+    #caseTitle {
+      text-align: center;
+    }
 
-  #caseDescription {
-    text-align: justify;
-    margin: 0 16px;
+    #caseDescription {
+      text-align: justify;
+      margin: 0 16px;
+    }
   }
 
   #contributionsTitle {
@@ -111,6 +111,7 @@
     text-align: center !important;
     margin: 0 32px !important;
     width: 820px;
+    line-height: 30px;
   }
 
   #caseImage {

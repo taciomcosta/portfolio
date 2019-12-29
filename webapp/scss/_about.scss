@@ -152,6 +152,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 1024px;
+    line-height: 30px;
 
     .row {
       display: flex;
@@ -190,6 +191,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 820px;
+    line-height: 30px;
 
     img {
       order: 1;

@@ -440,6 +440,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 1024px;
+    line-height: 30px;
   }
   #skillsSubsection .row {
     display: flex;
@@ -471,6 +472,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 820px;
+    line-height: 30px;
   }
   #whatAreYouDoingSubsection img {
     order: 1;
@@ -596,10 +598,10 @@
   width: 80%;
   align-self: center;
 }
-#caseDetailsSection #caseTitle {
+#caseDetailsSection #projectInfo #caseTitle {
   text-align: center;
 }
-#caseDetailsSection #caseDescription {
+#caseDetailsSection #projectInfo #caseDescription {
   text-align: justify;
   margin: 0 16px;
 }
@@ -667,6 +669,7 @@
     text-align: center !important;
     margin: 0 32px !important;
     width: 820px;
+    line-height: 30px;
   }
 
   #caseImage {
