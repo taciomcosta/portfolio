@@ -130,7 +130,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 80px auto;
+    margin: 80px auto !important;
 
     #techStack {
       font-size: fonts.$font-size-desktop-md;
