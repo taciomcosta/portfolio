@@ -31,6 +31,7 @@
   .memoir-title {
     font-size: 0.87rem;
     font-size: 3.9vw;
+    color: colors.$third-color;
   }
 
   .memoir-date {
@@ -68,6 +69,52 @@
 
     .memoir-date, .memoir-description {
       font-size: fonts.$font-size-tablet-xs;
+    }
+  }
+}
+
+@include breakpoints.desktop {
+  #memoirsSection {
+    padding-top: 100px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .memoir {
+
+    margin: 0;
+    padding: 10px;
+    width: 820px;
+    flex-direction: column;
+    align-items: center !important;
+    width: 260px;
+
+    img {
+      width: 256px !important;
+      height: 256px;
+      margin: 0;
+    }
+    
+    .text {
+      justify-content: flex-start;
+      align-items: flex-start !important;
+      margin: 0;
+      text-align: left;
+      width: 100% !important;
+    }
+
+    .memoir-title {
+      font-size: fonts.$font-size-desktop-md;
+      margin-top: 20px;
+    }
+
+    .memoir-date, .memoir-description {
+      font-size: fonts.$font-size-desktop-xs - 2px;
+      width: 100%;
+    }
+
+    .memoir-date {
+      margin: 10px 0;
     }
   }
 }

@@ -734,6 +734,7 @@
 .memoir .memoir-title {
   font-size: 0.87rem;
   font-size: 3.9vw;
+  color: #60656f;
 }
 .memoir .memoir-date {
   font-size: 3vw;
@@ -765,6 +766,45 @@
   }
   .memoir .memoir-date, .memoir .memoir-description {
     font-size: 2.7vw;
+  }
+}
+@media (min-width: 1025px) {
+  #memoirsSection {
+    padding-top: 100px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .memoir {
+    margin: 0;
+    padding: 10px;
+    width: 820px;
+    flex-direction: column;
+    align-items: center !important;
+    width: 260px;
+  }
+  .memoir img {
+    width: 256px !important;
+    height: 256px;
+    margin: 0;
+  }
+  .memoir .text {
+    justify-content: flex-start;
+    align-items: flex-start !important;
+    margin: 0;
+    text-align: left;
+    width: 100% !important;
+  }
+  .memoir .memoir-title {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .memoir .memoir-date, .memoir .memoir-description {
+    font-size: 14px;
+    width: 100%;
+  }
+  .memoir .memoir-date {
+    margin: 10px 0;
   }
 }
 #contactSection {
