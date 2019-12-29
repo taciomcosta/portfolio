@@ -551,7 +551,7 @@
 }
 @media (min-width: 1025px) {
   #casesSection {
-    padding-top: 100px;
+    padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -770,7 +770,7 @@
 }
 @media (min-width: 1025px) {
   #memoirsSection {
-    padding-top: 100px;
+    padding: 100px 0;
     flex-direction: row;
     justify-content: center;
   }
@@ -808,7 +808,6 @@
   }
 }
 #contactSection {
-  border: 1px solid black;
   padding-top: 10%;
   display: flex;
   background: black;
@@ -820,7 +819,6 @@
   margin-left: 16px;
 }
 #contacts li {
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -839,6 +837,9 @@
   text-decoration: none;
   color: #f7f7ff;
   cursor: pointer;
+}
+#contacts a:nth-child(3) {
+  margin-bottom: 0;
 }
 
 @media (min-width: 720px) and (max-width: 1025px) {
@@ -859,6 +860,34 @@
   }
   #contacts a span {
     font-size: 2.7vw;
+  }
+  #contacts a li {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1025px) {
+  #contactSection {
+    padding: 50px 0 !important;
+  }
+
+  #contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 820px;
+    margin: 0 auto;
+  }
+  #contacts a {
+    width: 80%;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  #contacts a img {
+    width: 64px;
+    height: 64px;
+  }
+  #contacts a span {
+    font-size: 16px;
   }
   #contacts a li {
     margin-bottom: 0;
