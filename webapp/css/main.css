@@ -145,7 +145,7 @@
     padding: 24px;
   }
   #menuNav #language {
-    font-size: 20px;
+    font-size: 16px;
     margin-right: 64px;
   }
 
@@ -168,7 +168,7 @@
   }
   #menuToggle #menu li, #menuToggle #menu a {
     color: #f7f7ff;
-    font-size: 20px;
+    font-size: 16px;
     padding: 0;
     margin-right: 20px;
     align-self: center;
@@ -297,7 +297,7 @@
     font-size: 22px;
   }
   #firstImpressionSection .first-impression-row > #quote {
-    font-size: 14px;
+    font-size: 16px;
     margin: 40px 0 0 0;
     width: 256px;
   }
@@ -418,7 +418,7 @@
   }
 
   .description {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   #aboutSection {
@@ -447,7 +447,7 @@
     margin-top: 80px !important;
   }
   #skillsSubsection .skill {
-    font-size: 20px;
+    font-size: 16px;
     width: auto;
   }
   #skillsSubsection .skill img {
@@ -567,7 +567,7 @@
     margin: 2px;
   }
   #casesList .case span {
-    font-size: 20px;
+    font-size: 16px;
   }
   #casesList .case img {
     filter: none;
@@ -659,7 +659,7 @@
   }
 
   #caseDescription {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center !important;
     margin: 0 32px !important;
     width: 820px;
@@ -894,7 +894,7 @@ section {
   .chips-section .chips span {
     margin: 13px 13px 0px 0;
     padding: 10px;
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 
